@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxes {
+    display: flex;
+    padding: 5rem;
+}
+
+@media (max-width: 1050px){
+    .boxes {
+        flex-direction: column;
+    }
+    .container {
+        align-items: flex-start;
+    }
+}
+
+.box1 {
+    width: 300px;
+    height: 450px;
+    background-color: aqua;
+}
+
+.box2 {
+    width: 300px;
+    height: 450px;
+    background-color: rebeccapurple;
+}
+
+.box3 {
+    width: 300px;
+    height: 450px;
+    background-color: violet;
+}
