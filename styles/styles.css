@@ -1,7 +1,24 @@
+:root {
+    /* ### Primary */
+
+    --color-primary-orange: hsl(31, 77%, 52%);
+    --color-primary-darkcyan: hsl(184, 100%, 22%);
+    --color-primary-darkercyan: hsl(179, 100%, 13%);
+
+    /* ### Neutral */
+
+    --color-neutral-white: hsla(0, 0%, 100%, 0.75);
+    --color-neutral-gray: hsl(0, 0%, 95%);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html {
+    font-size: 10px;
 }
 
 .container {
@@ -16,6 +33,89 @@
     padding: 5rem;
 }
 
+
+
+.box1 {
+    width: 300px;
+    height: 450px;
+    background-color: var(--color-primary-orange);
+    border-radius: 1rem 0 0 1rem ;
+}
+
+.box2 {
+    width: 300px;
+    height: 450px;
+    background-color: var(--color-primary-darkcyan);
+}
+
+.box3 {
+    width: 300px;
+    height: 450px;
+    background-color: var(--color-primary-darkercyan);
+    border-radius: 0 1rem 1rem 0;
+}
+
+.icon {
+    margin: 4rem 4rem 3rem 4rem ;
+}
+
+.heading {
+    text-transform: uppercase;
+    letter-spacing: 0.5;
+    font-family: 'big shoulders display', cursive;
+    font-size: 1.75rem;
+    color: var(--color-neutral-gray);
+    margin: 0 0 2.25rem 4rem;
+}
+
+.textbody {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.35rem;
+    color: var(--color-neutral-white);
+    margin: 0 7rem 4rem 4rem;
+    line-height: 2.25rem;
+}
+
+.button {
+    font-family: 'lexend deca', sans-serif;
+    letter-spacing: 1.25;
+    background-color: var(--color-neutral-gray);
+    border: none;
+    padding: 1.25rem 2.5rem;
+    border-radius: 6rem;
+    margin: 4rem;
+}
+
+.button:hover {
+    color: var(--color-neutral-gray);
+    border: var(--color-neutral-gray) solid 2px;
+
+}
+
+.button1 {
+    color: var(--color-primary-orange);
+}
+
+.button2 {
+    color: var(--color-primary-darkcyan);
+}
+
+.button3 {
+    color: var(--color-primary-darkercyan);
+}
+
+.button1:hover {
+    background-color: var(--color-primary-orange);
+}
+
+.button2:hover {
+    background-color: var(--color-primary-darkcyan);
+}
+
+.button3:hover {
+    background-color: var(--color-primary-darkercyan);
+}
+
 @media (max-width: 1050px){
     .boxes {
         flex-direction: column;
@@ -23,22 +123,12 @@
     .container {
         align-items: flex-start;
     }
-}
 
-.box1 {
-    width: 300px;
-    height: 450px;
-    background-color: aqua;
-}
+    .box1 {
+        border-radius: 1rem 1rem 0 0;
+    }
 
-.box2 {
-    width: 300px;
-    height: 450px;
-    background-color: rebeccapurple;
-}
-
-.box3 {
-    width: 300px;
-    height: 450px;
-    background-color: violet;
+    .box3 {
+        border-radius: 0 0 1rem 1rem;
+    }
 }
